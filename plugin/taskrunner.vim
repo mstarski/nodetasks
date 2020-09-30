@@ -6,7 +6,8 @@ endif
 let s:plugin_root_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 
 python3 << EOF
-  import sys, vim
+  import vim
+  import sys
   from os.path import normpath, join
   plugin_root_dir = vim.eval('s:plugin_root_dir')
   source_dir = normpath(join(plugin_root_dir, '..', 'src'))
