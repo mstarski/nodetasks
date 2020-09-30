@@ -11,7 +11,7 @@ import sys, vim
 from os.path import normpath, join
 plugin_root_dir = vim.eval('s:plugin_root_dir')
 source_dir = normpath(join(plugin_root_dir, '..', 'src'))
-sys.path.insert(0, python_root_dir)
+sys.path.insert(0, source_dir)
 
 import taskrunner
 
