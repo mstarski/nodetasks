@@ -1,7 +1,12 @@
 import json
 import os
+import sys
+import signal
 from subprocess import call
 from iterfzf import iterfzf
+
+# Handle clean exit
+signal.signal(signal.SIGINT, lambda s, f: sys.exit(0))
 
 
 def main():
@@ -26,7 +31,7 @@ def find_nearest_package_file():
         return f'{cwd}/package.json'
     else:
         os.chdir('../')
-        find_nearest_package_file()
+        return find_nearest_package_file()
 
 
 if __name__ == "__main__":
