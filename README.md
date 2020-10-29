@@ -14,4 +14,4 @@ $ pip install nodetasks
 
 ## Todo
 
-- [] Give user ability to run tasks with yarn
+:black_square_button: Give user ability to run tasks with yarn
