@@ -1,4 +1,4 @@
-# node-tasks
+# nodetasks
 
 A simple CLI for listing and executing npm tasks.
 
