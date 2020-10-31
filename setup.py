@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="nodetasks",
-    version="0.0.2",
+    version="0.0.8",
     author="Michał Starski",
     author_email="michal.starski@pm.me",
     description="Simple CLI script for listing and running npm tasks",
@@ -20,6 +20,7 @@ setup(
         'iterfzf'
     ],
     license='MIT',
+    packages=['nodetasks'],
     entry_points={
         'console_scripts': [
             'nodetasks=nodetasks:main'

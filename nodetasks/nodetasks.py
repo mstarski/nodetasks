@@ -32,7 +32,3 @@ def find_nearest_package_file():
     else:
         os.chdir('../')
         return find_nearest_package_file()
-
-
-if __name__ == "__main__":
-    main()
